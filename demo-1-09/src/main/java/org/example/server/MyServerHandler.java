@@ -1,8 +1,7 @@
-package org.example;
+package org.example.server;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.socket.SocketChannel;
 
 import java.time.LocalDateTime;

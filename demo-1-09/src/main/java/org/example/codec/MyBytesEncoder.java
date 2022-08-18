@@ -1,4 +1,4 @@
-package org.example;
+package org.example.codec;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
@@ -12,7 +12,7 @@ public class MyBytesEncoder extends MessageToByteEncoder {
     @Override
     protected void encode(ChannelHandlerContext ctx, Object msg, ByteBuf out) throws Exception {
         String s = msg.toString();
-        byte[] bytes = s.getBytes(Charset.forName("GBK"));
+        byte[] bytes = s.getBytes(StandardCharsets.UTF_8);
         byte[] newMsg = new byte[bytes.length + 2];
         newMsg[0] = 0x02;
         newMsg[newMsg.length - 1] = 0x03;

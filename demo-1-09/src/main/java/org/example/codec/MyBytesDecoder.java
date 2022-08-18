@@ -1,4 +1,4 @@
-package org.example;
+package org.example.codec;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
@@ -69,6 +69,6 @@ public class MyBytesDecoder extends ByteToMessageDecoder {
             return;
         }
 
-        out.add(msgContent.toString(Charset.forName("GBK")));
+        out.add(msgContent.toString(StandardCharsets.UTF_8));
     }
 }
