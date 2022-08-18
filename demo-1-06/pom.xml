@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>demo-1-05</artifactId>
+    <artifactId>demo-1-06</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <description>
-        netty 字符串编码器
+        netty 群发消息
     </description>
 
     <properties>
